@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --brand-color: #9bef1b;
+  --darkest-color: #27272a;
+  --dark-color: #52525b;
+  --mid-color: #9191a1;
+  --light-color: #cbcbdf;
+  --lightest-color: #f5f5f5;
+  --text-small: 16px;
+  --text-medium: 19px;
+  --text-big: 25px;
+}
+
+body {
+  background: var(--lightest-color);
+}
+
+/*ESTILOS DEL LOGO*/
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background: var(--lightest-color);
+}
+
+.container__header {
+  background: var(--lightest-color);
+  width: 1200px;
+  height: 90px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  place-items: center;
+  margin: 0 auto;
+  justify-content: center;
+
+  z-index: 100;
+}
+
+.header__logo {
+  width: 200px;
+  height: 90px;
+  display: flex;
+}
+
+.header__logo--a {
+  height: 90px;
+  margin: auto;
+}
+
+.header__logo--img {
+  width: 200px;
+  height: 90px;
+  
+}
+
+/*ESTILOS DEL menu principal*/
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav__item {
+  margin: 20px;
+}
+
+.nav__item--a {
+  color: var(--mid-color);
+}
+
+/*botones del login y sign up*/
+
+.nav__login--ul {
+  display: flex;
+  list-style: none;
+}
+
+.login--item {
+  margin: 20px;
+}
+
+.login--item--a {
+  color: var(--mid-color);
+}
+
+/*paguina de bienbenida*/
+
+.welcome {
+  height: 90dvh;
+  background-image: url(la-argentina.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1b1b2082;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 90;
+}
+
+.text__principal {
+  color: var(--lightest-color);
+  width: 700px;
+  height: 150px;
+}
+
+.text__principal .intro {
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 10px;
+  line-height: 10px;
+  margin-bottom: 5px;
+}
+
+.text__principal .title__principal {
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  line-height: 50px;
+}
+
+.productos {
+  width: 700px;
+  height: 40px;
+}
+
+.btn__productos {
+  color: var(--lightest-color);
+  border: 2px solid var(--lightest-color);
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+/*section de los servicios que ofrecemos*/
+
+.servicios {
+  width: 1200px;
+  height: 90dvh;
+  margin:  auto;
+  margin-top: 200px;
+}
+
+.servicios h2 {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.conteiner__services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  place-items: center;
+  gap: 20px;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.descri__img {
+  width: 90px;
+}
+
+.farewell {
+  height: 70dvh;
+  background-image: url(verduras.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1b1b2082;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 90;
+  margin-bottom: 200px;
+}
+
+/*contenido del footer*/
+
+.footer {
+  width: 100%;
+  height: 70dvh;
+  background: var(--darkest-color);
+  display: grid;
+}
+
+.footer hr {
+  width: 1200px;
+  border: none;
+  border-bottom: 1px solid var(--lightest-color);
+  margin: auto;
+}
+
+.footer__rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  place-items: center;
+margin: 5px auto;
+}
+
+.footer--links h4 {
+  color: var(--lightest-color);
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+
+.footer--links ul{
+  list-style: none;
+  color: var(--lightest-color);
+}
+
+.footer--links a {
+  font-size: 16px;
+  color: var(--lightest-color);
+  font-weight: 200;
+}
+
+.footer--social {
+  margin: auto;
+}
+
+.footer--social h4 {
+  color: var(--lightest-color);
+  font-size: 30px;
+  font-weight: 200;
+  letter-spacing: 4px;
+}
+
+.footer--social ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.footer--social img {
+  width: 50px;
+}
+
+.footer--copyright {
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.footer--copyright h5 {
+  color: var(--lightest-color);
+  font-weight: 200;
+  font-size: 1rem;
+  text-align: center;
+
+}
+
+
+/*nueva pagina*/
+
+
+.que-somos {
+  height: 90dvh;
+  background-image: url(mano_cafe.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1b1b2082;
+  background-blend-mode: multiply;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 90;
+}
+
+.text__principal {
+  color: var(--lightest-color);
+  width: 700px;
+  height: 150px;
+}
+
+.text__principal .intro {
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 10px;
+  line-height: 10px;
+  margin-bottom: 5px;
+}
+
+.text__principal .title__principal {
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  line-height: 50px;
+}
+
+.productos {
+  width: 700px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.btn__productos {
+  color: var(--lightest-color);
+  border: 2px solid var(--lightest-color);
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.Que-somos {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.more {
+
+  width: 100%;
+  height: 80dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__more {
+  height: 80%;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  place-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+
+.container__more--item {
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 100px;
+}
+
+.text__more--item h2 {
+  font-size: 2rem;
+  color: var(--mid-color);
+  letter-spacing: 5px;
+}
+
+.text__more--item p {
+  font-size: 1rem;
+}
+
+.more__img img{
+  width: 700px;
+  height: 400px;
+  border-radius: 20px;
+  
+}
+
+.text__more h2 {
+  font-size: 2rem;
+  color: var(--mid-color);
+  letter-spacing: 5px;
+}
+
+.text__more p {
+  font-size: 1rem;
+}
+
+
+/*from contacto*/
+
+.container__from {
+
+  max-width: 100%;
+  height: 100dvh;
+  background-image: url(cafe.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0000006d;
+  background-blend-mode: multiply;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background {
+  background: var(--lightest-color);
+  border-radius: 20px;
+  opacity: 80%;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.form .title {
+  color: var(--mid-color);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  outline: 0;
+  border: 1px solid rgb(219, 213, 213);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+  align-self: flex-end;
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--mid-color);
+  color: #fff;
+  cursor: pointer;
+}
+    
